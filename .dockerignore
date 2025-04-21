@@ -1,0 +1,6 @@
+*.py
+*.pyc
+*.bin
+__pycache__/
+build/
+dist/
