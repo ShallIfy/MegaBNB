@@ -80,14 +80,22 @@ docker build -t megabnb .
 
 ## 🚀 Run the Tool
 
-### Without Proxy:
+Run the container using bind mount to make sure any changes you make to `wallet.txt` or `proxy.txt` after build time are reflected.
+
+### ▶️ Example With Proxy
 ```bash
-docker run --rm -e PYTHONUNBUFFERED=1 megabnb 10
+docker run --rm \
+  -v $(pwd)/config:/app/config \
+  -e PYTHONUNBUFFERED=1 \
+  megabnb 10 -p
 ```
 
-### With Proxy:
+### ▶️ Example Without Proxy
 ```bash
-docker run --rm -e PYTHONUNBUFFERED=1 megabnb 10 -p
+docker run --rm \
+  -v $(pwd)/config:/app/config \
+  -e PYTHONUNBUFFERED=1 \
+  megabnb 10
 ```
 
 > Replace `10` with how many successful airdrop attempts you want per wallet.
@@ -120,6 +128,7 @@ This tool is provided as-is. Use at your own risk. For ethical automation and te
 ## 👤 Maintainer
 **Shallify**  
 - GitHub: [@Shallify](https://github.com/Shallify)  
-- TG : [@mfaishal24](https://t.me/mfaishal24)
-- X : [@IAmShall_](https://x.com/IAmShall_) | [@ShallifyLabs](https://x.com/ShallifyLabs)
+- Telegram: [@mfaishal24](https://t.me/mfaishal24)  
+- Twitter: [@IAmShall_](https://x.com/IAmShall_)  
+- Dev Twitter: [@ShallifyLabs](https://x.com/ShallifyLabs)
 
