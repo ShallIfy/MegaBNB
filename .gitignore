@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Compiled binary
+megabnb
+
+# Config files (real user data)
+config/wallet.txt
+config/proxy.txt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Docker artifacts (optional)
+*.tar
+*.log
