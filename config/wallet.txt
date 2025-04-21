@@ -1,0 +1,2 @@
+0xYourFirstWalletAddress
+0xAnotherWallet
