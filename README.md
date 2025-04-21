@@ -17,11 +17,12 @@
 ```
 MegaBNB/
 ├── config/
-│   ├── wallet.txt       # List of wallet addresses
-│   └── proxy.txt        # List of HTTP/HTTPS proxies (optional)
-├── Dockerfile           # Docker container configuration
-├── README.md            # You are here
-├── .gitignore           # Ignore build artifacts and sensitive data
+│   ├── wallet.txt         # Wallet addresses (sample only)
+│   └── proxy.txt          # Proxy list (optional, sample only)
+├── Dockerfile             # Docker image definition
+├── .gitignore             # Exclude files from version control
+├── .dockerignore          # Exclude files from Docker build context
+├── README.md              # Documentation
 ```
 
 ---
